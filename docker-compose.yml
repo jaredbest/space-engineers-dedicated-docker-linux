@@ -3,7 +3,7 @@ version: '3'
 services:
   se-server:
     image: mmmaxwwwell/space-engineers-dedicated-docker-linux:latest
-    container_name: space-engineers-dedicated-docker-linux
+    container_name: SpaceEngineers
     restart: unless-stopped
     volumes:
       - ./appdata/space-engineers/config/World:/appdata/space-engineers/World
@@ -13,3 +13,9 @@ services:
       - ./appdata/space-engineers/bins/steamcmd:/home/wine/.steam
     ports:
      - "27016:27016/udp"
+     
+networks:                                
+  se-net: 
+    driver: bridge                       
+    driver_opts:                         
+      com.docker.network.driver.mtu: 1400
