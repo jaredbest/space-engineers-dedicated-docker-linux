@@ -1,6 +1,6 @@
 # [mmmaxwwwell/space-engineers-dedicated-docker-linux](https://github.com/mmmaxwwwell/space-engineers-dedicated-docker-linux)
 
-All of the space engineers dedicated server on wine containers I found wouldn't build, and I embarked on a journey to create my own.
+All of the Space Engineers dedicated server on wine containers I found wouldn't build, and I embarked on a journey to create my own.
 
 ## Features:
 * Wine 6
@@ -51,11 +51,11 @@ docker run --restart always -p "27016:27016/udp" \
 ```
 
 ## Exit Codes:
-| Exit Code | Reason |
-| - | - |
-| 129 | Container is missing /appdata/space-engineers/World folder, volume mounts are mounted incorrectly. |
-| 130 | Container is missing /appdata/space-engineers/World/Sandbox.sbc, World is not placed in the right folder, or the volume mounts are mounted incorrectly. Ensure your world is in ```./appdata/space-engineers/config/World/```.|
-| 131 | Container is missing the dedicated server config file SpaceEngineers-Dedicated.cfg. Ensure that you have placed SpaceEngineers-Dedicated.cfg at ```./appdata/space-engineers/config/SpaceEngineers-Dedicated.cfg```. |
+| Exit Code | Reason                                                                                                                                                                                                                         |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 129       | Container is missing /appdata/space-engineers/World folder, volume mounts are mounted incorrectly.                                                                                                                             |
+| 130       | Container is missing /appdata/space-engineers/World/Sandbox.sbc, World is not placed in the right folder, or the volume mounts are mounted incorrectly. Ensure your world is in ```./appdata/space-engineers/config/World/```. |
+| 131       | Container is missing the dedicated server config file SpaceEngineers-Dedicated.cfg. Ensure that you have placed SpaceEngineers-Dedicated.cfg at ```./appdata/space-engineers/config/SpaceEngineers-Dedicated.cfg```.           |
 
 ## Directory Structure:
 ```
