@@ -34,7 +34,7 @@ Thank you to:
 
 ### -RECOMENDED- Pull from dockerhub and run with docker-compose
 
-* Clone this repo with ```git clone https://github.com/mmmaxwwwell/space-engineers-dedicated-docker-linux.git```.
+* Clone this repo with ```git clone https://github.com/jaredbest/space-engineers-dedicated-docker-linux.git```.
 * Change directory into the cloned repo with ```cd space-engineers-dedicated-docker-linux```.
 * Run the start script with ```./start```. This will initialize the ./appdata folder, unzip an empty star system from star-system.zip and start the server.
 
